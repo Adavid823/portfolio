@@ -1,182 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayo David | Developer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Orbitron', sans-serif;
-    }
-
-    body {
-      background: #0f0f1a;
-      color: #e0e0e0;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    header {
-      background: linear-gradient(90deg, #00f2fe, #4facfe);
-      padding: 20px;
-      text-align: center;
-      color: #000;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-
-    .hero img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #4facfe;
-      margin-bottom: 20px;
-    }
-
-    .hero h2 {
-      font-size: 1.8rem;
-      color: #4facfe;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .section h3 {
-      color: #00f2fe;
-      margin-bottom: 15px;
-      font-size: 1.5rem;
-      border-bottom: 1px solid #4facfe;
-      display: inline-block;
-    }
-
-    .skills, .contact, .projects {
-      margin-top: 20px;
-    }
-
-    .skills ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .skills li {
-      background: #1f1f2e;
-      padding: 10px;
-      margin-bottom: 8px;
-      border-left: 4px solid #4facfe;
-    }
-
-    .contact a, .social a {
-      color: #00f2fe;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      color: #888;
-    }
-
-    .snowflake {
-      position: fixed;
-      top: -10px;
-      width: 10px;
-      height: 10px;
-      background: white;
-      border-radius: 50%;
-      opacity: 0.8;
-      animation: fall linear infinite;
-      z-index: 999;
-    }
-
-    @keyframes fall {
-      to {
-        transform: translateY(100vh);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | AYO DAVID - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Ayo David</h1>
-    <p>Software Developer | Python Expert | Auto Engineer | Electrician</p>
-  </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-  <section class="hero">
-    <img src="Dav.jpg" alt="Ayo David" />
-    <h2>Welcome to My Portfolio</h2>
-    <p>I build interactive software and create tech-driven solutions in multiple industries.</p>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hello, I'm <span class="highlight">AYO DAVID</span></h1>
+                <p class="hero-subtitle">Full Stack Developer | Math Teacher | Automobile Electrician | System Analyst</p>
+                <p class="hero-description">With 3 years of experience in web development and expertise across multiple domains, I bring a unique blend of technical skills and practical knowledge to every project.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#skills" class="btn btn-secondary">View Skills</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img id="profile-image" src="david.jpg" alt="AYO DAVID" class="profile-image">
+            </div>
+        </div>
+    </section>
 
-  <section class="section about">
-    <h3>About Me</h3>
-    <p>I am a passionate software developer skilled in Python and multiple technical domains such as automobile engineering and electrical systems. I also develop games and tech tools that solve real-world problems.</p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a versatile professional with a passion for technology and education. My journey has taken me through various fields, allowing me to develop a diverse skill set that sets me apart in the industry.</p>
+                    <p>With 3 years of full-stack web development experience, I have built robust, scalable applications. My background as a math teacher has honed my analytical thinking and communication skills. As an automobile electrician (rewire specialist), I understand complex systems and troubleshooting. My experience as a system analyst has given me the ability to understand business requirements and translate them into technical solutions.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>4</h3>
+                            <p>Core Expertise Areas</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="section skills">
-    <h3>Skills</h3>
-    <ul>
-      <li>Python Programming</li>
-      <li>Game Development</li>
-      <li>Web Development (HTML, CSS, JavaScript)</li>
-      <li>Automobile Engineering</li>
-      <li>Electrical System Design</li>
-    </ul>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Expertise</h2>
+            <div class="skills-grid">
+                <!-- Full Stack Developer -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full Stack Developer</h3>
+                    <p>3 years of experience building modern web applications from front-end to back-end.</p>
+                    <div class="skill-tags">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
 
-  <section class="section projects">
-    <h3>Projects</h3>
-    <p>Coming soon: Ninja Turtle Battle Game (Free Fire Style)</p>
-    <p>Other tools and mini projects will be listed here.</p>
-  </section>
+                <!-- Math Teacher -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Math Teacher</h3>
+                    <p>Passionate about making mathematics accessible and engaging for students of all levels.</p>
+                    <div class="skill-tags">
+                        <span>Algebra</span>
+                        <span>Calculus</span>
+                        <span>Statistics</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
 
-  <section class="section contact">
-    <h3>Contact Me</h3>
-    <p>Email: <a href="mailto:davidayo823@gmail.com">davidayo823@gmail.com</a></p>
-    <p>Phone: <a href="tel:+2349132210304">+234 913 221 0304</a></p>
-  </section>
+                <!-- Automobile Electrician -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Automobile Electrician</h3>
+                    <p>Expert in automotive electrical systems, rewiring, and troubleshooting complex vehicle electronics.</p>
+                    <div class="skill-tags">
+                        <span>Wiring Systems</span>
+                        <span>Diagnostics</span>
+                        <span>Circuit Repair</span>
+                        <span>Vehicle Electronics</span>
+                    </div>
+                </div>
 
-  <section class="section social">
-    <h3>Connect with Me</h3>
-    <a href="https://github.com/Adavid823" target="_blank">GitHub: Adavid823</a>
-    <a href="https://tiktok.com/@saint_dav1" target="_blank">TikTok: saint_dav1</a>
-    <a href="https://youtube.com/@ayodavid1838" target="_blank">YouTube: @ayodavid1838</a>
-  </section>
+                <!-- System Analyst -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>System Analyst</h3>
+                    <p>Analyzing business requirements and designing efficient technical solutions to meet organizational needs.</p>
+                    <div class="skill-tags">
+                        <span>Requirements Analysis</span>
+                        <span>Process Optimization</span>
+                        <span>System Design</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Ayo David. All Rights Reserved.</p>
-  </footer>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Projects</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <span class="timeline-date">2021 - Present</span>
+                        <p>Developed and maintained multiple web applications using modern technologies. Built responsive front-end interfaces and robust back-end systems. Collaborated with cross-functional teams to deliver high-quality software solutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Math Teacher</h3>
+                        <span class="timeline-date">Ongoing</span>
+                        <p>Teaching mathematics to students, simplifying complex concepts, and helping learners develop strong problem-solving skills. Created engaging lesson plans and provided personalized support.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Automobile Electrician (Rewire)</h3>
+                        <span class="timeline-date">Ongoing</span>
+                        <p>Specializing in automotive electrical systems, performing complete rewiring jobs, diagnosing electrical issues, and ensuring vehicle electrical systems meet safety standards.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>System Analyst</h3>
+                        <span class="timeline-date">Ongoing</span>
+                        <p>Analyzing business processes, identifying improvement opportunities, and designing system solutions that align with organizational goals and technical requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    function createSnowflake() {
-      const flake = document.createElement('div');
-      flake.classList.add('snowflake');
-      flake.style.left = Math.random() * window.innerWidth + 'px';
-      flake.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      flake.style.opacity = Math.random();
-      document.body.appendChild(flake);
-      setTimeout(() => flake.remove(), 5000);
-    }
-    setInterval(createSnowflake, 150);
-  </script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>davidayo823@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+2349132210304</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kogi State, Nigeria</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
